@@ -1,5 +1,5 @@
-title: Architect theme
+title: MMCAP
 description: IMU based Motion Capture
-show_downloads: true
-google_analytics:
+show_downloads: false
+google_analytics: true
 theme: jekyll-theme-architect
