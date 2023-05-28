@@ -10,23 +10,23 @@ Imagine an animated film where the characters move in a way that feels natural a
 
 **Key Features**
 
-__Affordable Hardware: 
+*Affordable Hardware:* 
 
 Our system uses low-cost, easily accessible hardware components such as MPU9250, BNO08X, and a dual-core ESP32.
 
-__Real-Time Visualization: 
+*Real-Time Visualization:* 
 
 The Node.js server processes the IMU data using the Mahony AHRS algorithm to derive rotations, which are then mapped onto a 3D human skeleton visualized in a Three.js scene.
 
-__High Capture Rate:
+*High Capture Rate:*
 
 Our system can achieve up to 30 frames per second, providing smooth motion tracking.
 
-__Future Enhancement Plans:
+*Future Enhancement Plans:*
 
 We aim to further enhance the frame rate and incorporate Bluetooth as a data transfer protocol. We also plan to develop a Recurrent Neural Network (RNN) for real-time positional tracking.
 
-__Biovision Hierarchy (BVH) Recorder:
+*Biovision Hierarchy (BVH) Recorder:*
 
 The system includes a BVH recorder, enabling users to record, store, and replay the captured movements.
 
