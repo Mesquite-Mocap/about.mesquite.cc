@@ -42,7 +42,7 @@ The system includes a BVH recorder, enabling users to record, store, and replay 
 
 The need for efficient and cost-effective motion capture solutions has never been greater, with increasing demand in industries like film, animation, healthcare, and fitness. Traditional solutions either require costly, space-bound equipment, or they lack real-time capture capabilities. Our innovative approach fills this gap by providing an affordable, flexible, and nearly real-time solution to motion capture. This technology is designed to serve animation creators, filmmakers, health diagnostics professionals, fitness coaches, and any others who could benefit from precise motion capture. As we continue to enhance its capabilities, we anticipate even broader applications and accessibility for this technology.
 
-## **Installation Instructions: **
+## **Installation Instructions:**
 
 ## **Acknowledgements:**
 
