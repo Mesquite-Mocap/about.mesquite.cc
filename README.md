@@ -2,7 +2,7 @@
 
 ## **Abstract**
 
-In recent years, motion capture (Mo-Cap) technology has found wide-ranging applications, from animated movies and game development to healthcare diagnostics and fitness coaching. However, the traditional camera-based and IMU-based Mo-Cap solutions pose limitations due to space restrictions, sensitivity to lighting conditions, high costs, and the inability to capture in real-time. To address these challenges, we present an innovative, affordable, and nearly real-time IMU-based Mo-Cap solution. Our approach employs low-cost hardware and robust software that processes data from multiple IMUs worn on the body, representing the human skeleton's movements in real-time in a 3D visualization.
+As motion capture (Mo-Cap) technology finds its place in industries such as film, gaming, healthcare, and fitness, the need for cost-effective and real-time solutions has grown. Current systems either require camera setups that limit mobility and are sensitive to lighting conditions, or IMU-based solutions that are expensive and incapable of real-time data capture. To address this, we present an affordable, flexible, and nearly real-time Mo-Cap system. Our solution utilizes low-cost hardware components like MPU9250, BNO08X, and a dual-core ESP32. The system captures data from these IMUs, worn on the body, and transmits this data to a local server via web sockets. A Node.js server processes the data using the Mahony AHRS algorithm, translating the raw IMU data into corresponding human skeleton movements. These movements are then visualized in real-time in a Three.js scene, providing users a comprehensive and interactive view of the motion capture data.
 
 ## **Introduction**
 
