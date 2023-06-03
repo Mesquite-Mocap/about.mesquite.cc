@@ -1,6 +1,11 @@
 # An open-source, open-hardware, web-based Mocap system
 
 ## **Authors**
+Tejaswi Linge Gowda, Professor at Arizona State University
+
+Siva Nagi Reddy Munaganuru, MS-CS student at Arizona State University
+
+Pavan Krishna Reddy Madireddy , MS-CS student at Arizona State University
 
 ## **Abstract**
 
