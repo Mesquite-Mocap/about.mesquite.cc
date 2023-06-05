@@ -1,7 +1,7 @@
 
-@import "{{ site.theme }}";
+@import 'jekyll-theme-architect';
 
-body {
+body p {
     color: #003366;
 }
 
