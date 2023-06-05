@@ -1,4 +1,30 @@
 ---
 ---
+a {
+    color: #C3A394;
+}
+
+header h1 {
+    width: 540px;
+    margin-top: 0;
+    margin-bottom: 0.2em;
+    font-size: 72px;
+    font-weight: normal;
+    line-height: 1;
+    color: #7d684a;
+    letter-spacing: -1px;
+}
+
+header h2 {
+    width: 540px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 26px;
+    font-weight: normal;
+    line-height: 1.3;
+    color: #E9B05F;
+    letter-spacing: 0;
+}
 
 @import "{{ site.theme }}";
+
