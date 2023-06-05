@@ -1,29 +1,74 @@
----
----
+body {
+    color: #003366;
+}
+
 a {
-    color: #C3A394;
+    color: #003366;
+}
+
+a:hover {
+    color: #00234d;
+}
+
+header {
+    background: #F8DBA3 url(../images/header-bg.jpg) 0 0 repeat-x;
+    border-bottom: solid 1px #EBB666;
 }
 
 header h1 {
-    width: 540px;
-    margin-top: 0;
-    margin-bottom: 0.2em;
-    font-size: 72px;
-    font-weight: normal;
-    line-height: 1;
-    color: #7d684a;
-    letter-spacing: -1px;
+    color: #003366;
 }
 
 header h2 {
-    width: 540px;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 26px;
-    font-weight: normal;
-    line-height: 1.3;
-    color: #E9B05F;
-    letter-spacing: 0;
+    color: #003366;
+}
+
+#main-content h1 {
+    color: #003366;
+}
+
+#main-content h1:before {
+    color: #003366;
+}
+
+#main-content h2 {
+    color: #003366;
+}
+
+#main-content h2:before {
+    color: #003366;
+}
+
+#main-content h3 {
+    color: #003366;
+}
+
+#main-content h3:before {
+    color: #003366;
+}
+
+#main-content h4 {
+    color: #003366;
+}
+
+h4:before {
+    color: #003366;
+}
+
+#main-content h5 {
+    color: #003366;
+}
+
+h5:before {
+    color: #003366;
+}
+
+#main-content h6 {
+    color: #003366;
+}
+
+h6:before {
+    color: #003366;
 }
 
 @import "{{ site.theme }}";
