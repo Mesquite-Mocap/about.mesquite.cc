@@ -9,7 +9,7 @@
 ### Tejaswi Linge Gowda, Professor at Arizona State University
 
 
-![image](https://github.com/Mesquite-Mocap/about.mesquite.cc/blob/main/assets/edd.jpg)
+![image](assets/images/architecture _2.jpg)
 
 
 ## **Abstract**
