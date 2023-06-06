@@ -8,7 +8,7 @@
 
 ### Tejaswi Linge Gowda, Professor at Arizona State University
 
-[broad level archtecture](/assests/edd.jpg)
+[broad level archtecture](/assests/edd.jpg?raw=true "Title")
 
 ## **Abstract**
 
