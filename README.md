@@ -19,9 +19,6 @@ As motion capture (Mo-Cap) technology finds its place in industries such as film
 
 ![architecture_2](https://github.com/Mesquite-Mocap/about.mesquite.cc/assets/110155812/40c57f29-0b9d-4b1a-a02e-fce461a0b614)
 
-![threejs_scene](https://github.com/Mesquite-Mocap/about.mesquite.cc/assets/110155812/c6ca0868-d1b3-4e72-8214-ffc32a959fc1)
-
-
 
 ## **Introduction**
 
@@ -81,6 +78,9 @@ Once the server is running, you can start transmitting data from your IMUs to th
 The static files with the Three.js scene listen to the /web_client route. As the server receives a message, it processes it, converts it into quaternion, and does the axis rotation. Then, it checks if the particular bone has any dependencies, offsets the dependency, and then maps it to the Three.js human skeleton.
 
 You can view the 3D scene by opening **http://localhost:3000**.
+
+![threejs_scene](https://github.com/Mesquite-Mocap/about.mesquite.cc/assets/110155812/c6ca0868-d1b3-4e72-8214-ffc32a959fc1)
+
 ## **Acknowledgements:**
 
 ## **References**
