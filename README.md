@@ -63,6 +63,24 @@ The need for efficient and cost-effective motion capture solutions has never bee
 
 ## **Installation Instructions:**
 
+### **Prerequisites**
+Ensure you have Node.js installed on your machine. If you don't have Node.js installed, you can download it from the [Official Website](https://nodejs.org/en/download)
+
+### **Step 1: Clone the Repository**
+Clone the repository to your local machine. This can be done using the following command: **git clone https://github.com/Mesquite-Mocap/mesquite.cc-app**
+
+### **Step 2: Run the Node.js Server**
+Navigate to the repository folder that you've just cloned. Once you are in the right directory, you can start the server by running the following command:  **node server.js**
+
+This will start the server on port **3000** and initiate two WebSocket servers. The first WebSocket server is at the route **/hub**, which receives data from the IMUs. This server then relays the messages to the second WebSocket server at the route **/web_client**.
+
+### **Step 3: Connect the IMUs**
+Once the server is running, you can start transmitting data from your IMUs to the **/hub** route of the WebSocket server.
+
+### **Step 4: View the 3D Scene**
+The static files with the Three.js scene listen to the /web_client route. As the server receives a message, it processes it, converts it into quaternion, and does the axis rotation. Then, it checks if the particular bone has any dependencies, offsets the dependency, and then maps it to the Three.js human skeleton.
+
+You can view the 3D scene by opening **http://localhost:3000**.
 ## **Acknowledgements:**
 
 ## **References**
