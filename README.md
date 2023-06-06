@@ -8,12 +8,17 @@
 
 ### Tejaswi Linge Gowda, Professor at Arizona State University
 
+
 ![image](https://github.com/Mesquite-Mocap/about.mesquite.cc/blob/main/assets/edd.jpg)
+
 
 ## **Abstract**
 
 As motion capture (Mo-Cap) technology finds its place in industries such as film, gaming, healthcare, and fitness, the need for cost-effective and real-time solutions has grown. Current systems either require camera setups that limit mobility and are sensitive to lighting conditions, or use **Inertial Measurement Unit** (IMU) based solutions offer more flexibility, however, existing implementations are often expensive or unable to capture in real-time due to the complexity of machine learning models employed. To address this, we present an affordable, flexible, and nearly real-time Mo-Cap system. Our solution utilizes low-cost hardware components like MPU9250, BNO08X, and a dual-core ESP32. The system captures data from these IMUs, worn on the body, and transmits this data to a local server via web sockets. A Node.js server processes the data using the Mahony AHRS algorithm, translating the raw IMU data into corresponding human skeleton movements. These movements are then visualized in real-time in a Three.js scene, providing users an interactive view of the motion capture data.
+
+
 ![image](https://github.com/Mesquite-Mocap/about.mesquite.cc/blob/main/assets/architecture%20(2).jpg)
+
 
 ## **Introduction**
 
