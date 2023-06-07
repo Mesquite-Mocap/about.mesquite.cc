@@ -85,3 +85,7 @@ You can view the 3D scene by opening **http://localhost:3000**.
 
 ## **References**
 
+### [A Fully Wireless Wearable Motion Tracking System with 3D Human Model for Gait Analysis by Kevin Lee and Wei Tang](https://www.mdpi.com/1424-8220/21/12/4051)
+
+### [GAIT ANALYSIS USING IMU SENSOR by Trupti Gujarathi and Kalyani Bhole](https://ieeexplore.ieee.org/abstract/document/8944545)
+
