@@ -85,6 +85,10 @@ You can view the 3D scene by opening **http://localhost:3000**.
 
 ## **Acknowledgements:**
 
+We would like to express our sincere gratitude to **Bhargav Ragunath** for his instrumental help with hardware guidence and testing throughout the project. His expertise and dedication were invaluable.
+
+Our heartfelt thanks go to the **School of Arts, Media and Engineering at Arizona State University**. The availability of the school's labs, resources, and continuous support contributed significantly to the successful completion of our research.
+
 ## **References**
 
 ### [A Fully Wireless Wearable Motion Tracking System with 3D Human Model for Gait Analysis by Kevin Lee and Wei Tang](https://www.mdpi.com/1424-8220/21/12/4051)
