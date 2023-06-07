@@ -2,4 +2,4 @@ title: MMCAP
 description: IMU based Motion Capture
 show_downloads: false
 google_analytics: true
-theme: jekyll-theme-architect
+theme: alembic-jekyll-theme
