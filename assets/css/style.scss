@@ -23,14 +23,14 @@ header a.button {
     position: absolute;
     top: 0;
     right: 0;
-    background: #003366 url(../images/github-button.png) 0 0 no-repeat;
+    background: url(../images/github-button.png) 0 0 no-repeat;
     /* change background color here */
-    color: #F8DBA3;
+    
     /* add text color here */
 }
 
 header a.button:hover {
-    background-color: #00234d;
+    // background-color: #00234d;
     /* change hover background color here */
     color: #EBB666;
     /* change hover text color here */
@@ -42,9 +42,9 @@ aside a.button {
     padding-left: 64px;
     margin-bottom: 20px;
     font-size: 21px;
-    background: #003366 url(../images/download-button.png) 0 0 no-repeat;
+    background: url(../images/download-button.png) 0 0 no-repeat;
     /* change background color here */
-    color: #F8DBA3;
+    color: #003366;
     /* add text color here */
 }
 
