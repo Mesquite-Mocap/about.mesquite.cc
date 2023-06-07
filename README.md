@@ -6,6 +6,8 @@
 
 ### Pavan Krishna Reddy Madireddy , MS-CS student at Arizona State University
 
+### Assegid Kidane, Engineer at Arizona State University
+
 ### Tejaswi Linge Gowda, Professor at Arizona State University
 
 
