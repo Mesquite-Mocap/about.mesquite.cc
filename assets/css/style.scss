@@ -19,7 +19,41 @@ header {
     background: #F8DBA3 url(../images/header-bg.jpg) 0 0 repeat-x;
     border-bottom: solid 1px #EBB666;
 }
+header a.button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #003366 url(../images/github-button.png) 0 0 no-repeat;
+    /* change background color here */
+    color: #F8DBA3;
+    /* add text color here */
+}
 
+header a.button:hover {
+    background-color: #00234d;
+    /* change hover background color here */
+    color: #EBB666;
+    /* change hover text color here */
+}
+
+aside a.button {
+    display: block;
+    width: 138px;
+    padding-left: 64px;
+    margin-bottom: 20px;
+    font-size: 21px;
+    background: #003366 url(../images/download-button.png) 0 0 no-repeat;
+    /* change background color here */
+    color: #F8DBA3;
+    /* add text color here */
+}
+
+aside a.button:hover {
+    background-color: #00234d;
+    /* change hover background color here */
+    color: #EBB666;
+    /* change hover text color here */
+}
 header h1 {
     color: #003366;
 }
