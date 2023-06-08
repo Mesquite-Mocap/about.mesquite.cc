@@ -19,7 +19,7 @@
 This paper introduces an affordable, flexible, and real-time motion capture(Mo Cap) system leveraging wearable IMU sensors.Unlike existing solutions, our system forgoes complex camera setups and expensive Inertial Measurement Units (IMU) based solutions . The essence of our solution lies in the data processing step, which incorporates a sensor fusion algorithm using the Attitude and Heading Reference System (AHRS), axis rotations, and translations based on the Biovision Hierarchy structure. The processed data accurately animates a 3D human skeleton model in real-time, effectively mimicking the movements of the wearer. Users can interact with and record these movements through an intuitive web interface, which provides a three-dimensional representation of human motion. While not specifically tailored for a single use case, our system offers significant potential for diverse applications, including gait analysis, sports training, animation, and more. This flexibility makes our system a valuable tool for researchers, clinicians, trainers, and animators alike.
 
 
-![architecture_2](https://github.com/Mesquite-Mocap/about.mesquite.cc/assets/110155812/40c57f29-0b9d-4b1a-a02e-fce461a0b614)
+![flowchart](https://github.com/Mesquite-Mocap/about.mesquite.cc/assets/110155812/e2cf78c2-d6de-4a95-898c-ea4dfa659bf7)
 
 
 ## **Introduction**
