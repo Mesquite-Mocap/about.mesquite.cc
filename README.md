@@ -33,7 +33,7 @@ To address these challenges, we present an affordable, real-time MoCap system us
 In addition, our system integrates a Biovision Hierarchy (BVH) recorder for capturing and replaying human motions. Our ongoing work focuses on enhancing the system's capabilities, including position tracking using a Recurrent Neural Network (RNN) model. Our efforts underscore our goal to make MoCap technology more accessible, versatile, and user-focused.
 
 ## **System Design**
-Our proposed system is a mix of both hardware and software components working together seamlessly. Primarily, the system comprises wearable sensors (MPU9250 or BNO08X) and a dual-core ESP32 microcontroller affixed to the user’s body,  and a Node.js server operating on a central computer. This server encompasses data acquisition, data processing, and 3D visualization components, written in JavaScript.
+Our proposed system is a mix of both hardware and software components working together seamlessly. It primarily comprises wearable sensors (MPU9250 or BNO08X) and a dual-core ESP32 microcontroller affixed to the user’s body. Furthermore, a Node.js server operates on a central computer, overseeing data acquisition, data processing, and 3D visualization through a suite of JavaScript-based components.
 
 ### **Hardware**
 
@@ -41,7 +41,7 @@ The comprehensive system includes 15 wearable devices strapped to different part
 
 ### **Software**
 
-Our software solution is a Node.js-based web server. This server employs a web worker for consistently reading data from the web sockets, thereby minimizing computational overhead. Each bone's data is managed separately upon reception. As the raw sensor data originates from the local sensor's reference system, it is rotated into the reference system of the Three.js scene. Then, we offset the rotation for each bone by accounting for its parent's rotation based on the Biovision Hierarchy  structure and its initial T-pose value. When users stand in the T-pose and click the 'T-pose' button on the website, we record the rotation of each bone, which is then used as an offset for all future data. Consequently, we can animate the 3D human skeleton.
+At the core of our software solution is a Node.js-based web server. To minimize computational overhead, the server employs a web worker that consistently reads data from the web sockets. Upon reception, each bone's data is processed separately. The raw sensor data, initially based on the local sensor's reference system, is converted to align with the reference system of the Three.js scene. We then adjust the rotation for each bone, accounting for its parent's rotation per the Biovision Hierarchy structure, and its initial T-pose value. When users stand in the T-pose and click the 'T-pose' button on the website, we record the rotation of each bone, which is then used as an offset for all future data. Consequently, we can animate the 3D human skeleton.
 
 Furthermore, our system includes a Biovision Hierarchy (BVH) recorder. When the user initiates the record button on the website, the system traverses the Three.js skeleton, records the Euler rotation of each joint in the global frame, and saves this data in a BVH file. This feature allows for convenient recording and subsequent playback of motion.
 
