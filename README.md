@@ -16,7 +16,7 @@
 
 ## **Abstract**
 
-This paper introduces an affordable, flexible, and real-time motion capture system leveraging wearable IMU sensors.Unlike existing solutions, our system forgoes complex camera setups and expensive Inertial Measurement Units (IMU) based solutions . The essence of our solution lies in the data processing step, which incorporates a sensor fusion algorithm using the Attitude and Heading Reference System (AHRS), axis rotations, and translations based on the Biovision Hierarchy structure. The processed data accurately animates a 3D human skeleton model in real-time, effectively mimicking the movements of the wearer. Users can interact with and record these movements through an intuitive web interface, which provides a three-dimensional representation of human motion. While not specifically tailored for a single use case, our system offers significant potential for diverse applications, including gait analysis, sports training, animation, and more. This flexibility makes our system a valuable tool for researchers, clinicians, trainers, and animators alike.
+This paper introduces an affordable, flexible, and real-time motion capture(M0 Cap) system leveraging wearable IMU sensors.Unlike existing solutions, our system forgoes complex camera setups and expensive Inertial Measurement Units (IMU) based solutions . The essence of our solution lies in the data processing step, which incorporates a sensor fusion algorithm using the Attitude and Heading Reference System (AHRS), axis rotations, and translations based on the Biovision Hierarchy structure. The processed data accurately animates a 3D human skeleton model in real-time, effectively mimicking the movements of the wearer. Users can interact with and record these movements through an intuitive web interface, which provides a three-dimensional representation of human motion. While not specifically tailored for a single use case, our system offers significant potential for diverse applications, including gait analysis, sports training, animation, and more. This flexibility makes our system a valuable tool for researchers, clinicians, trainers, and animators alike.
 
 
 ![architecture_2](https://github.com/Mesquite-Mocap/about.mesquite.cc/assets/110155812/40c57f29-0b9d-4b1a-a02e-fce461a0b614)
@@ -24,7 +24,21 @@ This paper introduces an affordable, flexible, and real-time motion capture syst
 
 ## **Introduction**
 
-Our Mo-Cap system ingeniously integrates readily available hardware with with a sophisticated yet straightforward software approach. It leverages Inertial Measurement Units (IMUs) – specifically, the MPU9250 or BNO08X sensors – strapped onto the user's body to chronicle their movements. These IMUs are connected to a dual-core ESP32 microcontroller,which dedicates one core to reading sensor data and peroform sensor fusion, and the other for wirelessly transmitting the data. 
+The technology's ability to record human movement in detail has found applications in diverse areas, ranging from biomechanical research and clinical rehabilitation to animation and interactive entertainment. The recent surge in virtual and augmented reality applications has further fueled the demand for high-quality, accessible MoCap systems.
+
+Historically, optical MoCap systems, which rely on multiple cameras to track markers attached to a subject, have been the standard. These systems can provide high-resolution, accurate data and are therefore favored in applications where precision is paramount, such as in film production and scientific research. However, such systems come with significant drawbacks. Their setup is complex and time-consuming, requiring careful camera placement and optimal lighting conditions. Moreover, they are expensive, often costing hundreds of thousands of dollars, which limits their accessibility.
+
+In response to these challenges, there has been a shift towards the development and use of inertial measurement unit (IMU) based systems. IMU-based MoCap systems are portable, easy to use, and do not depend on external environmental conditions, making them ideal for use outside a studio setting. Various companies, such as Xsens, have introduced wearable IMU-based MoCap systems. However, these solutions are still costly, often due to proprietary hardware and software, and the use of high-end IMUs to ensure data quality.
+
+Addressing these limitations and needs, we present a cost-effective, real-time motion capture system that employs low-cost Inertial Measurement Units (IMUs)—specifically, the MPU9250 or BNO08X sensors—strategically placed on the user's body to track their movements within a robust server architecture. These IMUs are linked to a dual-core ESP32 microcontroller, which designates one core to the task of reading sensor data and performing sensor fusion, while the other handles the wireless transmission of the data.
+
+Our system effectively processes raw sensor data to generate an accurate 3D model mirroring the user's movements. It features an interactive and user-friendly web interface, powered by Three.js graphics, which presents a virtual human skeleton that mimics the wearer's actions in real-time. This web-based approach offers a flexible platform, facilitating remote monitoring and expanding possibilities for at-home applications.
+
+Moreover, our system integrates a Biovision Hierarchy (BVH) recorder, enabling the capture and replay of human motions. This functionality introduces a wide array of potential use cases, from detailed studies of body kinematics and enhancements in sports training to precise animation creation.
+
+As part of our ongoing efforts, we are working on augmenting the system's capabilities to include position tracking using a Recurrent Neural Network (RNN) model, which will enrich the quality and comprehensiveness of the data available for analysis and application. This commitment to continuous improvement signifies our aim to make motion capture technology increasingly accessible, versatile, and user-oriented.
+
+<!-- Our Mo-Cap system ingeniously integrates readily available hardware with with a sophisticated yet straightforward software approach. It leverages Inertial Measurement Units (IMUs) – specifically, the MPU9250 or BNO08X sensors – strapped onto the user's body to chronicle their movements. These IMUs are connected to a dual-core ESP32 microcontroller,which dedicates one core to reading sensor data and peroform sensor fusion, and the other for wirelessly transmitting the data. 
 
 Data transmission happens in **real-time** using web sockets at 45 frames per second, a protocol that enables continuous two-way communication between the client and the server. The server, built with Node.js, is responsible for receiving this data and processing it using the Mahony AHRS algorithm. This algorithm is crucial for converting raw IMU data into quaternion values, which represent the orientation of each IMU (and therefore each body part) in 3D space.
 
@@ -32,7 +46,7 @@ The processed data is then mapped to a 3D human skeleton model, built using Blen
 
 Moreover, our system integrates a Biovision Hierarchy (BVH) recorder, allowing users to record, store, and replay captured movements - a feature that proves invaluable for ongoing review and analysis. The enhanced ability of our system to mirror and record human movement, combined with its improved accuracy, opens up a plethora of potential applications ranging from animation and filmmaking to health diagnostics and fitness training."
 
-This holistic approach to motion capture brings a novel contribution to the field, combining low-cost hardware, real-time data processing, and dynamic 3D visualization, which can be of immense value to various industries from animation and filmmaking to healthcare and fitness.
+This holistic approach to motion capture brings a novel contribution to the field, combining low-cost hardware, real-time data processing, and dynamic 3D visualization, which can be of immense value to various industries from animation and filmmaking to healthcare and fitness. -->
 
 ## **Key Features**
 
