@@ -37,7 +37,9 @@ Our proposed system is a mix of both hardware and software components working to
 
 ### **Hardware**
 
-The comprehensive system includes 15 wearable devices strapped to different parts of the user's body as illustrated in Fig . Flexibility is key in our design; users can choose to use the devices on specific body parts such as the upper body, lower body, or legs. Each device consists of a self-calibrated IMU sensor (BNO08x with 9 DOF) and a dual-core ESP32 microcontroller. The microcontroller dedicates one core to reading quaternion data (to circumvent Euler's gimbal lock issue) from the connected IMU via the SCL and SDL pins. The other core broadcasts this data through web sockets at a rate of 30 frames per second, a value that can potentially be increased. The devices operate on battery power and are completely wireless, enhancing user mobility.
+![MMcap](https://github.com/Mesquite-Mocap/about.mesquite.cc/assets/110155812/eb8d7779-2d1f-4f2f-9cd6-0a22c6a36aba)
+
+The comprehensive system includes 15 wearable devices strapped to different parts of the user's body as illustrated in Fig above . Flexibility is key in our design; users can choose to use the devices on specific body parts such as the upper body, lower body, or legs. Each device consists of a self-calibrated IMU sensor (BNO08x with 9 DOF) and a dual-core ESP32 microcontroller. The microcontroller dedicates one core to reading quaternion data (to circumvent Euler's gimbal lock issue) from the connected IMU via the SCL and SDL pins. The other core broadcasts this data through web sockets at a rate of 30 frames per second, a value that can potentially be increased. The devices operate on battery power and are completely wireless, enhancing user mobility.
 
 ### **Software**
 
