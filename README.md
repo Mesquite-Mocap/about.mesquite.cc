@@ -107,3 +107,4 @@ Our heartfelt thanks go to the **School of Arts, Media and Engineering at Arizon
 
 ### [IMUNet: Efficient Regression Architecture for IMU Navigation and Positioning](https://arxiv.org/abs/2208.00068)
 
+### [An efficient orientation filter for inertial and magnetic sensor arrays](https://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=5975346&url=http%3A%2F%2Fieeexplore.ieee.org%2Fstamp%2Fstamp.jsp%3Ftp%3D%26arnumber%3D5975346)
