@@ -105,3 +105,5 @@ Our heartfelt thanks go to the **School of Arts, Media and Engineering at Arizon
 
 ### [GAIT ANALYSIS USING IMU SENSOR by Trupti Gujarathi and Kalyani Bhole](https://ieeexplore.ieee.org/abstract/document/8944545)
 
+### [IMUNet: Efficient Regression Architecture for IMU Navigation and Positioning](https://arxiv.org/abs/2208.00068)
+
