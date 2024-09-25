@@ -1,33 +1,22 @@
 # An Affordable, Real-Time, Web-Based, Open-Source and Open-Hardware Motion Capture System
 
-## **Authors**
-
-### Siva Nagi Reddy Munaganuru, MS-CS student at Arizona State University
-
-### Pavan Krishna Reddy Madireddy , MS-CS student at Arizona State University
-
-### Assegid Kidane, Engineer at Arizona State University
-
-### Tejaswi Linge Gowda, Professor at Arizona State University
-
-![flowchart](https://github.com/Mesquite-Mocap/about.mesquite.cc/assets/110155812/e2cf78c2-d6de-4a95-898c-ea4dfa659bf7)
 
 
 ## **Abstract**
 
-This paper introduces an affordable, flexible, and real-time motion capture(Mo Cap) system leveraging wearable IMU sensors.Unlike existing solutions, our system forgoes complex camera setups and expensive Inertial Measurement Units (IMU) based solutions . The essence of our solution lies in the data processing step, which incorporates a sensor fusion algorithm using the Attitude and Heading Reference System (AHRS), axis rotations, and translations based on the Biovision Hierarchy structure. The processed data accurately animates a 3D human skeleton model in real-time, effectively mimicking the movements of the wearer. Users can interact with and record these movements through an intuitive web interface, which provides a three-dimensional representation of human motion. While not specifically tailored for a single use case, our system offers significant potential for diverse applications, including gait analysis, sports training, animation, and more. This flexibility makes our system a valuable tool for researchers, clinicians, trainers, and animators alike.
+This paper introduces an affordable, flexible, and real-time motion capture(MoCap) system leveraging wearable IMU sensors. Unlike existing solutions, our system forgoes complex camera setups and expensive Inertial Measurement Units (IMU) based solutions. The essence of our solution lies in the data processing step, which incorporates a sensor fusion algorithm using the Altitude and Heading Reference System (AHRS), axis rotations, and translations based on the Biovision Hierarchy structure. The processed data accurately animates a 3D human skeleton model in real-time, effectively mimicking the movements of the wearer. Users can interact with and record these movements through an intuitive web interface, which provides a three-dimensional representation of human motion. While not specifically tailored for a single use case, our system offers significant potential for diverse applications, including gait analysis, sports training, animation, and more. This flexibility makes our system a valuable & affordable tool for researchers, clinicians, trainers, and animators alike.
 
-![architecture_1](https://github.com/Mesquite-Mocap/about.mesquite.cc/assets/110155812/91e38e99-c0b8-406f-a594-c420e26e78cf)
+![architecture-2](https://github.com/Mesquite-Mocap/about.mesquite.cc/assets/110155812/e2cf78c2-d6de-4a95-898c-ea4dfa659bf7)
 
 ## **Introduction**
 
 Motion Capture (MoCap) technology, renowned for its capacity to record detailed human movements, has found widespread applications in fields such as biomechanical research, clinical rehabilitation, animation, and interactive entertainment. The recent surge in virtual and augmented reality applications has further fueled the demand for high-quality, accessible MoCap systems.
 
-Traditionally, optical MoCap systems, characterized by multiple cameras tracking markers on a subject, have been the norm. Despite providing high-resolution, accurate data, they suffer from significant drawbacks including complex setup, high costs, and the need for optimal lighting conditions. In response to these challenges, there has been a shift towards the development and use of inertial measurement unit (IMU) based systems. IMU-based MoCap systems are portable, easy to use, and do not depend on external environmental conditions, making them ideal for use outside a studio setting. Various companies, such as Xsens, have introduced wearable IMU-based MoCap systems. However, these solutions are still costly, often due to proprietary hardware and software, and the use of high-end IMUs to ensure data quality.
+Traditionally, optical MoCap systems, characterized by multiple cameras tracking markers on a subject, have been the MoCap system most commonly used. Despite providing high-resolution, accurate data, they suffer from significant drawbacks including complex setup, high costs, and the need for optimal lighting conditions. These challenges often lead to a lack of accessibility for many potential users. In response to these challenges, there has been a shift towards the development and use of inertial measurement unit (IMU) based systems. IMU-based MoCap systems are portable, easy to use, and do not depend on external environmental conditions, making them ideal for use outside a studio setting. Various companies, such as Xsens, have introduced wearable IMU-based MoCap systems. However, these solutions are still costly, often due to proprietary hardware and software, and the use of high-end IMUs to ensure data quality.
 
-To address these challenges, we present an affordable, real-time MoCap system using low-cost IMUs (MPU9250 or BNO08X) interfaced with a dual-core ESP32 microcontroller. Our system effectively processes raw sensor data to generate an accurate 3D model mirroring the user's movements. It features an interactive and user-friendly web interface, powered by Three.js graphics, which presents a virtual human skeleton that mimics the wearer's actions in real-time. This web-based approach offers a flexible platform, facilitating remote monitoring and expanding possibilities for at-home applications.
+To address these challenges, we present an affordable, real-time MoCap system using low-cost IMUs (MPU9250 or BNO08X) equiped with a dual-core ESP32 microcontroller. Our system effectively processes raw sensor data to generate an accurate 3D model mirroring the user's movements. It features an interactive and user-friendly web interface, powered by Three.js graphics, which presents a virtual human skeleton that mimics the wearer's actions in real-time. This web-based approach offers a flexible platform, facilitating remote monitoring and expanding possibilities for at-home & professional applications.In addition, our system integrates a Biovision Hierarchy (BVH) recorder for capturing and replaying human motions. 
 
-In addition, our system integrates a Biovision Hierarchy (BVH) recorder for capturing and replaying human motions. Our ongoing work focuses on enhancing the system's capabilities, including position tracking using a Recurrent Neural Network (RNN) model. Our efforts underscore our goal to make MoCap technology more accessible, versatile, and user-focused.
+Our ongoing work focuses on enhancing the system's capabilities, including position tracking using a Recurrent Neural Network (RNN) model. Our efforts highlight our goal to make MoCap technology more accessible, versatile, and user-focused.
 
 ## **System Design**
 Our proposed system is a mix of both hardware and software components working together seamlessly. It primarily comprises wearable sensors (MPU9250 or BNO08X) and a dual-core ESP32 microcontroller affixed to the user’s body. Furthermore, a Node.js server operates on a central computer, overseeing data acquisition, data processing, and 3D visualization through a suite of JavaScript-based components.
@@ -40,7 +29,7 @@ The comprehensive system includes 15 wearable devices strapped to different part
 
 ### **Software**
 
-At the core of our software solution is a Node.js-based web server. To minimize computational overhead, the server employs a web worker that consistently reads data from the web sockets. Upon reception, each bone's data is processed separately. The raw sensor data, initially based on the local sensor's reference system, is converted to align with the reference system of the Three.js scene. We then adjust the rotation for each bone, accounting for its parent's rotation per the Biovision Hierarchy structure, and its initial T-pose value. When users stand in the T-pose and click the 'T-pose' button on the website, we record the rotation of each bone, which is then used as an offset for all future data. Consequently, we can animate the 3D human skeleton.
+At the core of our software solution is a Node.js-based web server. To minimize computational overhead, the server employs a web worker that consistently reads data from the web sockets. Upon reception, each bone's data is processed separately. The raw sensor data, initially based on the local sensor's reference system, is converted to align with the reference system of the Three.js scene. We then adjust the rotation for each bone, accounting for its parent's rotation per the Biovision Hierarchy structure, and its initial T-pose value. When users stand in the T-pose and click the 'T-pose' button on the website, we record the rotation of each bone, which is then used as an offset for all future data. Consequently, we can animate the 3D human skeleton. Our web application allows for users to easily track each device. This feature also allows for simple troubleshooting as the user is able to view the functionality of each device after connection. 
 
 Furthermore, our system includes a Biovision Hierarchy (BVH) recorder. When the user initiates the record button on the website, the system traverses the Three.js skeleton, records the Euler rotation of each joint in the global frame, and saves this data in a BVH file. This feature allows for convenient recording and subsequent playback of motion.
 
@@ -48,19 +37,19 @@ Furthermore, our system includes a Biovision Hierarchy (BVH) recorder. When the 
 
 ### *Affordable Hardware:* 
 
-Our system uses low-cost, easily accessible hardware components such as MPU9250, BNO08X, and a dual-core ESP32.
+Our system uses low-cost, easily accessible hardware components such as MPU9250, BNO08X, and a dual-core ESP32. This allows access for groups previously unable to afford MoCap devices.
 
 ### *Real-Time Visualization:* 
 
-The Node.js server processes the IMU data using the Mahony AHRS algorithm to derive rotations, which are then mapped onto a 3D human skeleton visualized in a Three.js scene.
+The Node.js server processes the IMU data using the Mahony AHRS algorithm to derive rotations, which are then mapped onto a 3D human skeleton visualized in a [web application](https://mesquite.cc/) employing the use of Three.js. 
 
 ### *High Capture Rate:*
 
-Our system can achieve up to 45 frames per second, providing smooth motion tracking.
+Our system can achieve up to 45 frames per second, providing smooth motion tracking ensuring accuracy of the produced movements & recordings. 
 
 ### *Future Enhancement Plans:*
 
-We aim to further enhance the frame rate and incorporate Bluetooth as a data transfer protocol. We also plan to develop a Recurrent Neural Network (RNN) for real-time positional tracking.
+We aim to further enhance the frame rate and incorporate Bluetooth through a data transfer protocol. We also plan to develop a Recurrent Neural Network (RNN) for improved real-time positional tracking.
 
 ### *Biovision Hierarchy (BVH) Recorder:*
 
@@ -68,18 +57,18 @@ The system includes a BVH recorder, enabling users to record, store, and replay 
 
 ## **Statement of Need:**
 
-The need for efficient and cost-effective motion capture solutions has never been greater, with increasing demand in industries like film, animation, healthcare, and fitness. Traditional solutions either require costly, space-bound equipment, or they lack real-time capture capabilities. Our innovative approach fills this gap by providing an affordable, flexible, and nearly real-time solution to motion capture. This technology is designed to serve animation creators, filmmakers, health diagnostics professionals, fitness coaches, and any others who could benefit from precise motion capture. As we continue to enhance its capabilities, we anticipate even broader applications and accessibility for this technology.
+The need for efficient and cost-effective motion capture solutions has never been greater, with increasing demand in industries like film, animation, healthcare, and fitness. Traditional solutions either require costly, space-bound equipment, or they lack real-time capture capabilities. This results in potential users having no or extremely limited access to MoCap devices or using MoCaps with sub-par capture capabilities. Our innovative approach fills this gap by providing an affordable, flexible, and nearly real-time solution to motion capture. Our MoCap device aims to solve both of the gaps aforementioned by developing a device that is extremely affordable for users & comprises of accurate capture capabilities. This technology is designed to serve animation creators, filmmakers, health diagnostics professionals, fitness coaches, and any others who could benefit from precise motion capture. As we continue to enhance its capabilities, we anticipate even broader applications and accessibility for this technology.
 
 ## **Installation Instructions:**
 
 ### **Prerequisites**
-Ensure you have Node.js installed on your machine. If you don't have Node.js installed, you can download it from the [Official Website](https://nodejs.org/en/download)
+Ensure you have Node.js installed on your machine. If you don't have Node.js installed, you can install it from the [Official Website](https://nodejs.org/en/download)
 
 ### **Step 1: Clone the Repository**
 Clone the repository to your local machine. This can be done using the following command: **git clone https://github.com/Mesquite-Mocap/mesquite.cc-app**
 
 ### **Step 2: Run the Node.js Server**
-Navigate to the repository folder that you've just cloned. Once you are in the right directory, you can start the server by running the following command:  **node server.js**
+Navigate to the repository folder that you've just cloned. Once you are in the right directory, you can start the server by running the following command: **node server.js**
 
 This will start the server on port **3000** and initiate two WebSocket servers. The first WebSocket server is at the route **/hub**, which receives data from the IMUs. This server then relays the messages to the second WebSocket server at the route **/web_client**.
 
@@ -92,6 +81,10 @@ The static files with the Three.js scene listen to the /web_client route. As the
 You can view the 3D scene by opening **http://localhost:3000**.
 
 ![threejs_scene](https://github.com/Mesquite-Mocap/about.mesquite.cc/assets/110155812/c6ca0868-d1b3-4e72-8214-ffc32a959fc1)
+
+## **Usage**
+
+You can view a detailed document featuring all of the steps on how to use the MoCap device & web application [here](https://docs.google.com/document/d/1Fr9YO1iRqgkOwfiHcC7wOiKtj6y1EImnh5eg-t4rpIA/edit?usp=sharing). This document covers in detail how to set up & effectively use the entire MoCap kit, from getting everything out of the box to saving recorded movements. 
 
 ## **Acknowledgements:**
 
