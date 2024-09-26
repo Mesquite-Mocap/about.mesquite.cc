@@ -2,14 +2,6 @@
 
 ## **Authors**
 
-### Siva Nagi Reddy Munaganuru, MS-CS student at Arizona State University
-
-### Pavan Krishna Reddy Madireddy , MS-CS student at Arizona State University
-
-### Assegid Kidane, Engineer at Arizona State University
-
-### Tejaswi Linge Gowda, Professor at Arizona State University
-
 ![flowchart](https://github.com/Mesquite-Mocap/about.mesquite.cc/assets/110155812/e2cf78c2-d6de-4a95-898c-ea4dfa659bf7)
 
 
