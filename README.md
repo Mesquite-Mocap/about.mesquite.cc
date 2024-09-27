@@ -94,7 +94,7 @@ You can view a detailed document featuring all of the steps on how to use the Mo
 
 We would like to express our sincere gratitude to **Bhargav Ragunath** for his instrumental help with hardware guidence and testing throughout the project. His expertise and dedication were invaluable.
 
-Our heartfelt thanks go to the **School of Arts, Media and Engineering at Arizona State University**. The availability of the school's labs, resources, and continuous support contributed significantly to the successful completion of our research.
+Our heartfelt thanks go to the **Herberger Institute for Design and the Arts | School of Arts, Media and Engineering at Arizona State University**. The availability of the school's labs, resources, and continuous support contributed significantly to the successful completion of our research.
 
 ## **References**
 
