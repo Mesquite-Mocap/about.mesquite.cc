@@ -84,7 +84,7 @@ The static files with the Three.js scene listen to the /web_client route. As the
 
 You can view the 3D scene by opening **http://localhost:3000**.
 
-<img src="https://github.com/Mesquite-Mocap/about.mesquite.cc/assets/110155812/c6ca0868-d1b3-4e72-8214-ffc32a959fc1" height="350">
+<img src="https://github.com/Mesquite-Mocap/about.mesquite.cc/assets/110155812/c6ca0868-d1b3-4e72-8214-ffc32a959fc1" height="300">
 
 ## **Usage**
 
