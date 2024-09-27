@@ -10,22 +10,24 @@ This paper introduces an affordable, flexible, and real-time motion capture(MoCa
 
 ## **Introduction**
 
-Motion Capture (MoCap) technology, renowned for its capacity to record detailed human movements, has found widespread applications in fields such as biomechanical research, clinical rehabilitation, animation, and interactive entertainment. The recent surge in virtual and augmented reality applications has further fueled the demand for high-quality, accessible MoCap systems.
+Motion Capture (MoCap) technology, renowned for its capacity to record detailed human movements, has found widespread applications in fields such as biomechanical research, clinical rehabilitation, animation, interactive entertainment, and sports medicine. The recent surge in virtual and augmented reality applications has further fueled the demand for high-quality & accessible MoCap systems.
 
-Traditionally, optical MoCap systems, characterized by multiple cameras tracking markers on a subject, have been the MoCap system most commonly used. Despite providing high-resolution, accurate data, they suffer from significant drawbacks including complex setup, high costs, and the need for optimal lighting conditions. These challenges often lead to a lack of accessibility for many potential users. In response to these challenges, there has been a shift towards the development and use of inertial measurement unit (IMU) based systems. IMU-based MoCap systems are portable, easy to use, and do not depend on external environmental conditions, making them ideal for use outside a studio setting. Various companies, such as Xsens, have introduced wearable IMU-based MoCap systems. However, these solutions are still costly, often due to proprietary hardware and software, and the use of high-end IMUs to ensure data quality.
+Traditionally, optical MoCap systems, characterized by multiple cameras tracking markers on the user, have been the MoCap system most commonly used. Despite providing high-resolution, accurate data, they suffer from many drawbacks: complex setup, high costs, and the need for optimal lighting conditions. These challenges often lead to a lack of accessibility for many potential users. In response to these challenges, there has been a shift towards the implementation of inertial measurement unit (IMU) based systems. IMU-based MoCap systems are portable, easy to use, and do not depend on external environmental conditions. This makes them ideal for use outside a studio setting. Various companies like Xsens have introduced wearable IMU-based MoCap systems. However, these solutions are still costly, due to proprietary hardware and software, and the use of high-end IMUs to ensure data quality.
 
-To address these challenges, we present an affordable, real-time MoCap system using low-cost IMUs (MPU9250 or BNO08X) equiped with a dual-core ESP32 microcontroller. Our system effectively processes raw sensor data to generate an accurate 3D model mirroring the user's movements. It features an interactive and user-friendly web interface, powered by Three.js graphics, which presents a virtual human skeleton that mimics the wearer's actions in real-time. This web-based approach offers a flexible platform, facilitating remote monitoring and expanding possibilities for at-home & professional applications.In addition, our system integrates a Biovision Hierarchy (BVH) recorder for capturing and replaying human motions. 
+On the other hand, users who look at more affordable Motion Capture systems tend to sacrifice the quality of the motion capture. This results in the device not providing accurate results that represent the user's true motions, making its application extremely difficult to justify in many professional settings, where accuracy is needed. Hence, a potential motion capture user in the current market must decide between a affordable yet inaccurate or an accurate and expensive MoCap system.
 
-Our ongoing work focuses on enhancing the system's capabilities, including position tracking using a Recurrent Neural Network (RNN) model. Our efforts highlight our goal to make MoCap technology more accessible, versatile, and user-focused.
+To address these challenges, we developed an affordable, real-time MoCap system using low-cost IMUs (MPU9250 or BNO08X) equiped with a dual-core ESP32 microcontroller. Our system effectively processes raw sensor data to generate an accurate 3D model mirroring the user's movements. It features an interactive and user-friendly web interface, using Three.js graphics, which presents a virtual human structure that mimics the wearer's actions in real-time. This web-based approach offers a flexible platform, facilitating remote monitoring and expanding possibilities for at-home & professional applications.In addition, our system integrates a Biovision Hierarchy (BVH) recorder for capturing and replaying human motions. 
+
+In addition to both affordability and accurate real-time capture capabilities, our motion capture system gives potential users the opportunity to adjust the hardware and software to best suit their needs dependent on their use cases for the motion capture system. Software can be edited as it is fully open-source, allowing for potential users to adjust segments of the code to work better for them. 
 
 ## **System Design**
-Our proposed system is a mix of both hardware and software components working together seamlessly. It primarily comprises wearable sensors (MPU9250 or BNO08X) and a dual-core ESP32 microcontroller affixed to the user’s body. Furthermore, a Node.js server operates on a central computer, overseeing data acquisition, data processing, and 3D visualization through a suite of JavaScript-based components.
+Our proposed system is a mix of both hardware and software components working together seamlessly. It primarily comprises wearable sensors (MPU9250 or BNO08X) and a dual-core ESP32 microcontroller affixed to the user’s body. Furthermore, a Node.js server operates on a central computer, overseeing data acquisition, data processing, and 3D visualization through a suite of JavaScript-based components. Each POD affixed to the user communicates with the router, raspberry pi, and eventually the web application. 
 
 ### **Hardware**
 
-![Hardware](https://github.com/Mesquite-Mocap/about.mesquite.cc/assets/110155812/43fb7e01-d452-4140-a455-67dbdc9997fe)
+![Hardware](https://github.com/Mesquite-Mocap/about.mesquite.cc/blob/main/.github/images/15-imu-shown.png)
 
-The comprehensive system includes 15 wearable devices strapped to different parts of the user's body as illustrated in Fig above . Flexibility is key in our design; users can choose to use the devices on specific body parts such as the upper body, lower body, or legs. Each device consists of a self-calibrated IMU sensor (BNO08x with 9 DOF) and a dual-core ESP32 microcontroller. The microcontroller dedicates one core to reading quaternion data (to circumvent Euler's gimbal lock issue) from the connected IMU via the SCL and SDL pins. The other core broadcasts this data through web sockets at a rate of 30 frames per second, a value that can potentially be increased. The devices operate on battery power and are completely wireless, enhancing user mobility.
+The comprehensive system includes 15 wearable devices, PODs, that are affixed to the user's body through velcro straps. Each POD is labeled with respect to the body part that it should be placed on. Flexibility is key in our design; users can choose to use the devices on specific body parts such as the upper body, lower body, or legs. Each device consists of a self-calibrated IMU sensor (BNO08x with 9 DOF) and a dual-core ESP32 microcontroller. The microcontroller dedicates one core to reading quaternion data (to circumvent Euler's gimbal lock issue) from the connected IMU through the SCL and SDL pins. The other core broadcasts this data through web sockets at a steady rate of 30 frames per second, with the potential to reach 45 frames per second at times. The devices operate on battery power and are completely wireless, ensuring the movements the user can make are not limited. 
 
 ### **Software**
 
@@ -37,27 +39,27 @@ Furthermore, our system includes a Biovision Hierarchy (BVH) recorder. When the 
 
 ### *Affordable Hardware:* 
 
-Our system uses low-cost, easily accessible hardware components such as MPU9250, BNO08X, and a dual-core ESP32. This allows access for groups previously unable to afford MoCap devices.
+Our system uses low-cost, easily accessible hardware components such as MPU9250, BNO08X, and a dual-core ESP32. This allows access for groups previously unable to afford MoCap devices to have the opportunity to now utilize motion capture technology for both personal and professional application(s). 
 
 ### *Real-Time Visualization:* 
 
-The Node.js server processes the IMU data using the Mahony AHRS algorithm to derive rotations, which are then mapped onto a 3D human skeleton visualized in a [web application](https://mesquite.cc/) employing the use of Three.js. 
+The Node.js server processes the IMU data using the Mahony AHRS algorithm to derive rotations, which are then mapped onto a 3D human model visualized in the [web application](https://mesquite.cc/), which employs the use of Three.js. 
 
 ### *High Capture Rate:*
 
-Our system can achieve up to 45 frames per second, providing smooth motion tracking ensuring accuracy of the produced movements & recordings. 
+Our system can achieve up to 45 frames per second, providing smooth motion tracking while ensuring accuracy of the produced movements & recordings. 
 
 ### *Future Enhancement Plans:*
 
-We aim to further enhance the frame rate and incorporate Bluetooth through a data transfer protocol. We also plan to develop a Recurrent Neural Network (RNN) for improved real-time positional tracking.
+We aim to further enhance the frame rate and incorporate Bluetooth through a data transfer protocol. Also, we plan on extending to device to the hands & the face, eventually using a diffusion model to reduce the 15 nodes to just 6 nodes while maintaining at least the same level of accuracy. We also plan to develop a Recurrent Neural Network (RNN) in order to track the user's face & hand movements, which can be of use for identification purposes. 
 
 ### *Biovision Hierarchy (BVH) Recorder:*
 
-The system includes a BVH recorder, enabling users to record, store, and replay the captured movements.
+The system includes a BVH recorder, enabling users to record, store, and replay the captured movements on the device they connected to the MoCap kit. 
 
 ## **Statement of Need:**
 
-The need for efficient and cost-effective motion capture solutions has never been greater, with increasing demand in industries like film, animation, healthcare, and fitness. Traditional solutions either require costly, space-bound equipment, or they lack real-time capture capabilities. This results in potential users having no or extremely limited access to MoCap devices or using MoCaps with sub-par capture capabilities. Our innovative approach fills this gap by providing an affordable, flexible, and nearly real-time solution to motion capture. Our MoCap device aims to solve both of the gaps aforementioned by developing a device that is extremely affordable for users & comprises of accurate capture capabilities. This technology is designed to serve animation creators, filmmakers, health diagnostics professionals, fitness coaches, and any others who could benefit from precise motion capture. As we continue to enhance its capabilities, we anticipate even broader applications and accessibility for this technology.
+The need for efficient and cost-effective motion capture solutions has never been greater, with increasing demand in industries such as, but not limited to: film, animation, healthcare, and fitness. Traditional solutions either require costly, space-bound equipment, or they lack real-time capture capabilities. This results in potential users having no or extremely limited access to MoCap devices or using MoCaps with sub-par capture capabilities. Our innovative approach fills this gap by providing an affordable, flexible, and nearly real-time solution to motion capture. Our MoCap device aims to solve both of the gaps aforementioned by developing a device that is extremely affordable for users & comprises of accurate capture capabilities. This technology is designed to serve animation creators, filmmakers, health diagnostics professionals, fitness coaches, and any others who could benefit from precise motion capture. As we continue to enhance its capabilities, we anticipate even broader applications and accessibility for this technology.
 
 ## **Installation Instructions:**
 
@@ -76,7 +78,7 @@ This will start the server on port **3000** and initiate two WebSocket servers. 
 Once the server is running, you can start transmitting data from your IMUs to the **/hub** route of the WebSocket server.
 
 ### **Step 4: View the 3D Scene**
-The static files with the Three.js scene listen to the /web_client route. As the server receives a message, it processes it, converts it into quaternion, and does the axis rotation. Then, it checks if the particular bone has any dependencies, offsets the dependency, and then maps it to the Three.js human skeleton.
+The static files with the Three.js scene listen to the /web_client route. As the server receives a message, it processes it, converts it into quaternion, and does the axis rotation. Then, it checks if the particular bone has any dependencies, offsets the dependency, and then maps it to the Three.js human model.
 
 You can view the 3D scene by opening **http://localhost:3000**.
 
