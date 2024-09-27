@@ -98,10 +98,10 @@ Our heartfelt thanks go to the **School of Arts, Media and Engineering at Arizon
 
 ## **References**
 
-### [A Fully Wireless Wearable Motion Tracking System with 3D Human Model for Gait Analysis by Kevin Lee and Wei Tang](https://www.mdpi.com/1424-8220/21/12/4051)
+[A Fully Wireless Wearable Motion Tracking System with 3D Human Model for Gait Analysis by Kevin Lee and Wei Tang](https://www.mdpi.com/1424-8220/21/12/4051)
 
-### [GAIT ANALYSIS USING IMU SENSOR by Trupti Gujarathi and Kalyani Bhole](https://ieeexplore.ieee.org/abstract/document/8944545)
+[Gait Analysis using IMU Sensor by Trupti Gujarathi and Kalyani Bhole](https://ieeexplore.ieee.org/abstract/document/8944545)
 
-### [IMUNet: Efficient Regression Architecture for IMU Navigation and Positioning](https://arxiv.org/abs/2208.00068)
+[IMUNet: Efficient Regression Architecture for IMU Navigation and Positioning](https://arxiv.org/abs/2208.00068)
 
-### [An efficient orientation filter for inertial and magnetic sensor arrays](https://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=5975346&url=http%3A%2F%2Fieeexplore.ieee.org%2Fstamp%2Fstamp.jsp%3Ftp%3D%26arnumber%3D5975346)
+[An Efficient Orientation Filter for Inertial and Magnetic Sensor Arrays](https://ieeexplore.ieee.org/xpl/login.jsptp=&arnumber=5975346&url=http%3A%2F%2Fieeexplore.ieee.org%2Fstamp%2Fstamp.jsp%3Ftp%3D%26arnumber%3D5975346)
