@@ -21,6 +21,7 @@ To address these challenges, we developed an affordable, real-time MoCap system 
 In addition to both affordability and accurate real-time capture capabilities, our motion capture system gives potential users the opportunity to adjust the hardware and software to best suit their needs dependent on their use cases for the motion capture system. Software can be edited as it is fully open-source, allowing for potential users to adjust segments of the code to work better for them. 
 
 ![full-mocap-flowchart](https://github.com/Mesquite-Mocap/about.mesquite.cc/blob/main/.github/images/full-mocap-flowchart.png)
+<img src="https://github.com/Mesquite-Mocap/about.mesquite.cc/blob/main/.github/images/full-mocap-flowchart.png" height="500">
 
 ## **System Design**
 Our proposed system is a mix of both hardware and software components working together seamlessly. It primarily comprises wearable sensors (MPU9250 or BNO08X) and a dual-core ESP32 microcontroller affixed to the user’s body. Furthermore, a Node.js server operates on a central computer, overseeing data acquisition, data processing, and 3D visualization through a suite of JavaScript-based components. Each POD affixed to the user communicates with the router, raspberry pi, and eventually the web application. 
