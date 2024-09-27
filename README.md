@@ -69,7 +69,7 @@ The need for efficient and cost-effective motion capture solutions has never bee
 Ensure you have Node.js installed on your machine. If you don't have Node.js installed, you can install it from the [Official Website](https://nodejs.org/en/download)
 
 ### **Step 1: Clone the Repository**
-Clone the repository to your local machine. This can be done using the following command: **git clone https://github.com/Mesquite-Mocap/mesquite.cc-app**
+Clone the repository to your local machine. This can be done using the following command: "**git clone https://github.com/Mesquite-Mocap/mesquite.cc-app**"
 
 ### **Step 2: Run the Node.js Server**
 Navigate to the repository folder that you've just cloned. Once you are in the right directory, you can start the server by running the following command: **node server.js**
