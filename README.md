@@ -27,7 +27,7 @@ Our proposed system is a mix of both hardware and software components working to
 
 ### **Hardware**
 
-![Hardware](https://github.com/Mesquite-Mocap/about.mesquite.cc/blob/main/.github/images/15-imu-shown.png)
+![Hardware](https://github.com/Mesquite-Mocap/about.mesquite.cc/blob/main/.github/images/15-imu-shown.png | width=100)
 
 The comprehensive system includes 15 wearable devices, PODs, that are affixed to the user's body through velcro straps directly attached to each POD. Each POD is labeled with respect to the body part that it should be placed on. Flexibility is key in our design; users can choose to use the devices on specific body parts such as the upper body, lower body, or legs. Each device consists of a self-calibrated IMU sensor (BNO08x with 9 DOF) and a dual-core ESP32 microcontroller. The microcontroller dedicates one core to reading quaternion data (to circumvent Euler's gimbal lock issue) from the connected IMU through the SCL and SDL pins. The other core broadcasts this data through web sockets at a steady rate of 30 frames per second, with the potential to reach 45 frames per second at times. The devices operate on battery power and are completely wireless, ensuring the movements the user can make are not limited. 
 
