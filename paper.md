@@ -1,10 +1,30 @@
-# An Affordable, Real-Time, Web-Based, Open-Source and Open-Hardware Motion Capture System
-
-## **Authors**
-Tejaswi Gowda, Ph.D.
-Poojan Vanani
-Romir Patel
-Darsh Patel
+---
+title: 'Mesquite Mocap: An Affordable, Real-Time, Web-Based, Open-Source and Open-Hardware Motion Capture System'
+tags:
+  - Computer Science
+  - Motion Capture
+  - MoCap Technology
+  - Inertial Measurement Unit
+authors:
+  - name: Tejaswi Gowda, Ph.D.
+    orcid:
+    corresponding: true
+    equal-contrib: true
+  - name: Poojan Vanani
+    orcid:
+    corresponding: true
+    equal-contrib: true
+  - name: Romir Patel
+    orcid:
+    corresponding: true
+    equal-contrib: true
+  - name: Darsh Patel
+    orcid:
+    corresponding: true
+    equal-contrib: true
+date: 
+bibliography: paper.bib
+---
 
 
 ## **Abstract**
