@@ -1,5 +1,10 @@
 # An Affordable, Real-Time, Web-Based, Open-Source and Open-Hardware Motion Capture System
 
+## **Authors**
+Tejaswi Gowda, Ph.D.
+Poojan Vanani
+Romir Patel
+Darsh Patel
 
 
 ## **Abstract**
