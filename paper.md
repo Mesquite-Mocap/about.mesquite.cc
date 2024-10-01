@@ -6,22 +6,18 @@ tags:
   - Mocap Technology
   - Inertial Measurement Unit
 authors:
-  - name: Tejaswi Gowda, Ph.D.
+  - name: Poojan Vanani.
     orcid:
-    corresponding: true
-    equal-contrib: true
-  - name: Poojan Vanani
-    orcid:
-    corresponding: true
-    equal-contrib: true
+    corresponding: false
   - name: Romir Patel
     orcid:
-    corresponding: true
-    equal-contrib: true
+    corresponding: false
   - name: Darsh Patel
     orcid:
+    corresponding: false
+  - name: Tejaswi Gowda Ph.D.
+    orcid:
     corresponding: true
-    equal-contrib: true
 date: 
 ---
 
