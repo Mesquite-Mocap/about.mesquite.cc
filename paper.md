@@ -46,7 +46,6 @@ In addition to both affordability and accurate real-time capture capabilities, o
 
 ![full-mocap-arch](https://github.com/Mesquite-Mocap/about.mesquite.cc/blob/main/.github/images/full-mocap-flowchart.png)
 
-<!-- <img src="https://github.com/Mesquite-Mocap/about.mesquite.cc/blob/main/.github/images/full-mocap-flowchart.png" height="400"> -->
 
 # **System Design**
 Our proposed system is a mix of both hardware and software components working together seamlessly. It primarily comprises wearable sensors (MPU9250 or BNO08X) and a dual-core ESP32 microcontroller affixed to the user’s body. Furthermore, a Node.js server operates on a central computer, overseeing data acquisition, data processing, and 3D visualization through a suite of JavaScript-based components. Each POD affixed to the user communicates with the router, raspberry pi, and eventually the web application. 
@@ -55,7 +54,6 @@ Our proposed system is a mix of both hardware and software components working to
 
 ![15-imu-shown](https://github.com/Mesquite-Mocap/about.mesquite.cc/blob/main/.github/images/15-imu-shown.png)
 
-<!--<img src="https://github.com/Mesquite-Mocap/about.mesquite.cc/blob/main/.github/images/15-imu-shown.png" width="300"> -->
 
 The comprehensive system includes 15 wearable devices, PODs, that are affixed to the user's body through velcro straps directly attached to each POD. Each POD is labeled with respect to the body part that it should be placed on. Flexibility is key in our design; users can choose to use the devices on specific body parts such as the upper body, lower body, or legs. Each device consists of a self-calibrated IMU sensor (BNO08x with 9 DOF) and a dual-core ESP32 microcontroller. The microcontroller dedicates one core to reading quaternion data (to circumvent Euler's gimbal lock issue) from the connected IMU through the SCL and SDL pins. The other core broadcasts this data through web sockets at a steady rate of 30 frames per second, with the potential to reach 45 frames per second at times. The devices operate on battery power and are completely wireless, ensuring the movements the user can make are not limited. 
 
@@ -114,7 +112,6 @@ You can view the 3D scene by opening **http://localhost:3000**.
 
 ![threejs-scene](https://github.com/Mesquite-Mocap/about.mesquite.cc/blob/main/assets/images/threejs_scene.png)
 
-<!-- <img src="https://github.com/Mesquite-Mocap/about.mesquite.cc/blob/main/assets/images/threejs_scene.png" height="300"> -->
 
 # **Usage**
 
