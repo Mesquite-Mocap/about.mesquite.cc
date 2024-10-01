@@ -8,16 +8,17 @@ tags:
 authors:
   - name: Poojan Vanani.
     orcid:
-    corresponding: false
+    equal-contrib: true
   - name: Romir Patel
     orcid:
-    corresponding: false
+    equal-contrib: true
   - name: Darsh Patel
     orcid:
-    corresponding: false
+    equal-contrib: true
   - name: Tejaswi Gowda Ph.D.
     orcid:
     corresponding: true
+    equal-contrib: true
 date: 
 ---
 
