@@ -30,7 +30,7 @@ date:
 
 This paper introduces an affordable, flexible, and real-time motion capture(MoCap) system leveraging wearable IMU sensors. Unlike existing solutions, our system forgoes complex camera setups and expensive Inertial Measurement Units (IMU) based solutions. The essence of our solution lies in the data processing step, which incorporates a sensor fusion algorithm using the Altitude and Heading Reference System (AHRS), axis rotations, and translations based on the Biovision Hierarchy structure. The processed data accurately animates a 3D human skeleton model in real-time, effectively mimicking the movements of the wearer. Users can interact with and record these movements through an intuitive web interface, which provides a three-dimensional representation of human motion. While not specifically tailored for a single use case, our system offers significant potential for diverse applications, including gait analysis, sports training, animation, and more. This flexibility makes our system a valuable & affordable tool for researchers, clinicians, trainers, and animators alike.
 
-![architecture-2](https://github.com/Mesquite-Mocap/about.mesquite.cc/assets/110155812/e2cf78c2-d6de-4a95-898c-ea4dfa659bf7)
+![architecture-2](assets/images/architecture_2.jpg)
 
 # **Introduction**
 
@@ -44,7 +44,7 @@ To address these challenges, we developed an affordable, real-time MoCap system 
 
 In addition to both affordability and accurate real-time capture capabilities, our motion capture system gives potential users the opportunity to adjust the hardware and software to best suit their needs dependent on their use cases for the motion capture system. Software can be edited as it is fully open-source, allowing for potential users to adjust segments of the code to work better for them. 
 
-![full-mocap-arch](https://github.com/Mesquite-Mocap/about.mesquite.cc/blob/main/.github/images/full-mocap-flowchart.png)
+![full-mocap-arch](assets/images/full-mocap-flowchart.png)
 
 
 # **System Design**
@@ -52,7 +52,7 @@ Our proposed system is a mix of both hardware and software components working to
 
 ## **Hardware**
 
-![15-imu-shown](https://github.com/Mesquite-Mocap/about.mesquite.cc/blob/main/.github/images/15-imu-shown.png)
+![15-imu-shown](assets/images/15-imu-shown.png)
 
 
 The comprehensive system includes 15 wearable devices, PODs, that are affixed to the user's body through velcro straps directly attached to each POD. Each POD is labeled with respect to the body part that it should be placed on. Flexibility is key in our design; users can choose to use the devices on specific body parts such as the upper body, lower body, or legs. Each device consists of a self-calibrated IMU sensor (BNO08x with 9 DOF) and a dual-core ESP32 microcontroller. The microcontroller dedicates one core to reading quaternion data (to circumvent Euler's gimbal lock issue) from the connected IMU through the SCL and SDL pins. The other core broadcasts this data through web sockets at a steady rate of 30 frames per second, with the potential to reach 45 frames per second at times. The devices operate on battery power and are completely wireless, ensuring the movements the user can make are not limited. 
@@ -110,7 +110,7 @@ The static files with the Three.js scene listen to the /web_client route. As the
 
 You can view the 3D scene by opening **http://localhost:3000**.
 
-![threejs-scene](https://github.com/Mesquite-Mocap/about.mesquite.cc/blob/main/assets/images/threejs_scene.png)
+![threejs-scene](assets/images/threejs_scene.png)
 
 
 # **Usage**
