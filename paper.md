@@ -3,7 +3,7 @@ title: 'Mesquite Mocap: An Affordable, Real-Time, Web-Based, Open-Source and Ope
 tags:
   - Computer Science
   - Motion Capture
-  - MoCap Technology
+  - Mocap Technology
   - Inertial Measurement Unit
 authors:
   - name: Tejaswi Gowda, Ph.D.
