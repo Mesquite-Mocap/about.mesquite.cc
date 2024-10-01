@@ -1,4 +1,4 @@
-name: Draft Paper
+name: Draft of Paper
 on:
   push:
     paths:
