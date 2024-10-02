@@ -6,7 +6,7 @@ tags:
   - Mocap Technology
   - Inertial Measurement Unit
 authors:
-  - name: Poojan Vanani.
+  - name: Poojan Vanani
     orcid:
     equal-contrib: true
   - name: Romir Patel
