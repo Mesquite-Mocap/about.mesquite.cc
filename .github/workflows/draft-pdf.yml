@@ -1,4 +1,4 @@
-name: Draft of Paper
+name: Draft_Test
 on:
   push:
     paths:
