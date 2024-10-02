@@ -124,9 +124,12 @@ Our heartfelt thanks go to the **Herberger Institute for Design and the Arts | S
 
 Lee, K., & Tang, W. (2021). A Fully Wireless Wearable Motion Tracking System with 3D Human Model for Gait Analysis. Sensors, 21(12), 4051. https://doi.org/10.3390/s21124051
 
+
 Gujarathi, T., & Bhole, K. (2019). GAIT ANALYSIS USING IMU SENSOR. 2019 10th International Conference on Computing, Communication and Networking Technologies (ICCCNT). https://doi.org/10.1109/icccnt45670.2019.8944545
 
+
 Zeinali, B., Zandizari, H., & Morris, C. J. (2024). IMUNet: Efficient Regression Architecture for IMU Navigation and Positioning. ArXiv.org. https://arxiv.org/abs/2208.00068
+
 
 adiog. (2018). embed-ahrs-madgwick/madgwick_internal_report.pdf at master · adiog/embed-ahrs-madgwick. GitHub. https://github.com/adiog/embed-ahrs-madgwick/blob/master/madgwick_internal_report.pdf
 
