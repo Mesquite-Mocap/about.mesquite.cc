@@ -10,13 +10,13 @@ authors:
     orcid:
     equal-contrib: true
   - name: Romir Patel
-    orcid:
+    orcid: 0009-0002-1642-9525
     equal-contrib: true
   - name: Darsh Patel
     orcid:
     equal-contrib: true
   - name: Tejaswi Gowda Ph.D.
-    orcid:
+    orcid: 0000-0002-0896-6526
     corresponding: true
     equal-contrib: true
 date: 
