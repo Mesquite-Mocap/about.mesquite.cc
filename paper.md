@@ -7,13 +7,13 @@ tags:
   - Inertial Measurement Unit
 authors:
   - name: Poojan Vanani
-    orcid:
+    orcid: 0009-0007-0930-6400
     equal-contrib: true
   - name: Romir Patel
     orcid: 0009-0002-1642-9525
     equal-contrib: true
   - name: Darsh Patel
-    orcid:
+    orcid: 0009-0006-4559-4027
     equal-contrib: true
   - name: Tejaswi Gowda Ph.D.
     orcid: 0000-0002-0896-6526
