@@ -9,7 +9,7 @@ on:
       - assets/images/full-mocap-flowchart.png
       - assets/images/threejs_scene.png
       - .github/workflows/draft-pdf.yml
-
+ 
 jobs:
   paper:
     runs-on: ubuntu-latest
