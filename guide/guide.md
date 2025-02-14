@@ -41,3 +41,6 @@ Mesquite Motion Capture System - Standard Operating Procedure (SOP)
 - Hold the T-pose for 5 seconds.
 
 7. Recording BVH:
+
+- To record BVH data, stay in T-pose and click **Record BVH**.
+- Click **Stop** when you finish recording.
