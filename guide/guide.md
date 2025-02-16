@@ -1,6 +1,6 @@
 Mesquite Motion Capture System - Standard Operating Procedure (SOP)
 
-1. Plug in the Dongle  (Formatted correctly for GitHub as H2 heading):
+1. Plug in the Dongle:
 
 - Insert the dongle into your PC and wait 5 seconds.
 - Open a web browser and visit [mesquite.cc](http://mesquite.cc).
