@@ -7,7 +7,7 @@ Mesquite Motion Capture System - Standard Operating Procedure (SOP)
 - Open a web browser and visit [mesquite.cc](http://mesquite.cc).
 - Click **Link Dongle** and select your dongle.
 - Choose your version from the branches and click **Wear Guide**.
-![Step 1 Guide](https://github.com/Mesquite-Mocap/about.mesquite.cc/tree/main/assets/images/step1gif.gif)
+![Step 1 Guide](https://github.com/Mesquite-Mocap/about.mesquite.cc/blob/main/assets/images/step1gif.gif)
 
 
 2. Wear the Suit:
