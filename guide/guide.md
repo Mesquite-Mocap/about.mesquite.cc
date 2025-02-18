@@ -7,6 +7,7 @@ Mesquite Motion Capture System - Standard Operating Procedure (SOP)
 - Open a web browser and visit [mesquite.cc](http://mesquite.cc).
 - Click **Link Dongle** and select your dongle.
 - Choose your version from the branches and click **Wear Guide**.
+
 **_Image: Plugging in the Dongle_**
 ![Step 1 Guide](https://github.com/Mesquite-Mocap/about.mesquite.cc/blob/main/assets/images/step1gif.gif)
 
@@ -23,6 +24,7 @@ Mesquite Motion Capture System - Standard Operating Procedure (SOP)
 - Turn on each pod and check connections and battery levels in **Branches**.
 - On [mesquite.cc](http://mesquite.cc), click **Box Calibration**, then **Start**.
 - Wait 45 seconds for pods to restart and reconnect.
+
 **_Image: Line up the pods_**
 ![Step 3 Guide](https://raw.githubusercontent.com/Mesquite-Mocap/about.mesquite.cc/main/assets/images/step3_1.jpg)
 ![Step 3 Guide](https://raw.githubusercontent.com/Mesquite-Mocap/about.mesquite.cc/main/assets/images/step3_2.jpg)
