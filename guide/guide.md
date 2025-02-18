@@ -1,23 +1,29 @@
+# 🛠️ Mesquite Motion Capture System - Standard Operating Procedure (SOP)
 
-Mesquite Motion Capture System - Standard Operating Procedure (SOP)
+---
 
-1. Plug in the Dongle:
+## 1️⃣ Plug in the Dongle 🖥️
 
 - Insert the dongle into your PC and wait 5 seconds.
 - Open a web browser and visit [mesquite.cc](http://mesquite.cc).
 - Click **Link Dongle** and select your dongle.
 - Choose your version from the branches and click **Wear Guide**.
 
-**_Plugging in the Dongle_**
-![Step 1 Guide](https://github.com/Mesquite-Mocap/about.mesquite.cc/blob/main/assets/images/step1gif.gif)
+**🔹 Image 1: Plugging in the Dongle**
+![Step 1 Guide](https://raw.githubusercontent.com/Mesquite-Mocap/about.mesquite.cc/main/assets/images/step1gif.gif)
 
+---
 
-2. Wear the Suit:
+## 2️⃣ Wear the Suit 🎽
 
 - Open the **Wear Guide** and wear the straps according to their labels.
 - Ensure each bracket is placed as shown in the guide.
 
-3. Box Calibration:
+*Proper fit ensures accurate motion capture.*
+
+---
+
+## 3️⃣ Box Calibration 📦
 
 - Remove all pods from the charging hub and line them up as shown.
 - Ensure all charging ports face the same direction.
@@ -25,40 +31,73 @@ Mesquite Motion Capture System - Standard Operating Procedure (SOP)
 - On [mesquite.cc](http://mesquite.cc), click **Box Calibration**, then **Start**.
 - Wait 45 seconds for pods to restart and reconnect.
 
-**_Line up the pods_**
+**🔹 Image 2: Lining up the Pods**
 ![Step 3 Guide](https://raw.githubusercontent.com/Mesquite-Mocap/about.mesquite.cc/main/assets/images/step3_1.jpg)
+
+**🔹 Image 3: Checking Pod Connections**
 ![Step 3 Guide](https://raw.githubusercontent.com/Mesquite-Mocap/about.mesquite.cc/main/assets/images/step3_2.jpg)
-**_Check pod connections and Battery levels_**
+
+**🔹 Image 4: Monitoring Battery Levels**
 ![Step 3 Guide](https://raw.githubusercontent.com/Mesquite-Mocap/about.mesquite.cc/main/assets/images/step3_3.gif)
 
+---
 
-
-
-4. Saving Box Calibration Values:
+## 4️⃣ Saving Box Calibration Values 💾
 
 - After calibration, download the values to your system.
 - Wear pods according to their labels with arrows pointing upward.
-**_Starting Box Calibration_**
+
+**🔹 Image 5: Starting Box Calibration**
 ![Step 4 Guide](https://raw.githubusercontent.com/Mesquite-Mocap/about.mesquite.cc/main/assets/images/Boxcalibration.gif)
-**_Saving Box Calibration Values_**
+
+**🔹 Image 6: Saving Calibration Values**
 ![Step 4 Guide](https://raw.githubusercontent.com/Mesquite-Mocap/about.mesquite.cc/main/assets/images/boxcalibrationsave.gif)
 
-5. Mobile Calibration:
+---
+
+## 5️⃣ Mobile Calibration 📱
 
 - Turn on your phone and visit `192.168.4.1`.
 - Click **Start** on the Mesquite homepage.
-- Once connected, scan left and right sides in portrait mode.
+- Once connected, scan the left and right sides in portrait mode.
 - Place the phone on the hips plate with the camera facing as shown.
 - Attach the hips pod to the back of the phone with the arrow sticker facing up.
 
-6. Starting Motion Capture:
+*Ensure the phone is positioned correctly for accurate motion calibration.*
+
+---
+
+## 6️⃣ Starting Motion Capture 🏃‍♂️
 
 - Verify that all 16 sensors are connected and transmitting data.
-- Stand in a T-pose as shown in the guide.
+- Stand in a **T-pose** as shown in the guide.
 - On [mesquite.cc](http://mesquite.cc), click **Set T-Pose**, then **Start Timer**.
 - Hold the T-pose for 5 seconds.
 
-7. Recording BVH:
+*Maintaining a stable T-pose ensures precise skeletal mapping.*
 
-- To record BVH data, stay in T-pose and click **Record BVH**.
+---
+
+## 7️⃣ Recording BVH 🎬
+
+- To record BVH data, stay in a **T-pose** and click **Record BVH**.
+- Perform the desired movements.
 - Click **Stop** when you finish recording.
+
+*Save your recordings and review data for accuracy.*
+
+---
+
+## 🎯 **Important Tips for Best Performance:**
+
+- ✅ Ensure all pods are fully charged before use.  
+- ✅ Wear straps securely to avoid sensor shifts.  
+- ✅ Calibrate in a stable, well-lit environment.  
+- ✅ Use the **mobile calibration** feature only when stationary.  
+
+---
+
+💡 **Need Help?** Visit our website: [mesquite.cc](http://mesquite.cc) for support and troubleshooting.
+
+📡 **Stay Connected. Stay Accurate.**  🌐
+
