@@ -22,6 +22,8 @@ Mesquite Motion Capture System - Standard Operating Procedure (SOP)
 - Turn on each pod and check connections and battery levels in **Branches**.
 - On [mesquite.cc](http://mesquite.cc), click **Box Calibration**, then **Start**.
 - Wait 45 seconds for pods to restart and reconnect.
+![Step 3 Guide](https://raw.githubusercontent.com/Mesquite-Mocap/about.mesquite.cc/main/assets/images/step3_1.jpg)
+![Step 3 Guide](https://raw.githubusercontent.com/Mesquite-Mocap/about.mesquite.cc/main/assets/images/step3_2.jpg)
 
 4. Saving Box Calibration Values:
 
