@@ -1,1 +1,0 @@
-![Step 1 Guide](./assets/images/step1gif.gif)
