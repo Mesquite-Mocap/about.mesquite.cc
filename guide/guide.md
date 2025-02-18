@@ -1,8 +1,8 @@
-# 🛠️ Mesquite Motion Capture System - Standard Operating Procedure (SOP)
+#  Mesquite Motion Capture System - Standard Operating Procedure (SOP)
 
 ---
 
-## 1️⃣ Plug in the Dongle 🖥️
+## 1️⃣ Plug in the Dongle 
 
 - Insert the dongle into your PC and wait 5 seconds.
 - Open a web browser and visit [mesquite.cc](http://mesquite.cc).
@@ -14,7 +14,7 @@
 
 ---
 
-## 2️⃣ Wear the Suit 🎽
+## 2️⃣ Wear the Suit 
 
 - Open the **Wear Guide** and wear the straps according to their labels.
 - Ensure each bracket is placed as shown in the guide.
@@ -23,7 +23,7 @@
 
 ---
 
-## 3️⃣ Box Calibration 📦
+## 3️⃣ Box Calibration 
 
 - Remove all pods from the charging hub and line them up as shown.
 - Ensure all charging ports face the same direction.
@@ -42,7 +42,7 @@
 
 ---
 
-## 4️⃣ Saving Box Calibration Values 💾
+## 4️⃣ Saving Box Calibration Values 
 
 - After calibration, download the values to your system.
 - Wear pods according to their labels with arrows pointing upward.
@@ -55,7 +55,7 @@
 
 ---
 
-## 5️⃣ Mobile Calibration 📱
+## 5️⃣ Mobile Calibration 
 
 - Turn on your phone and visit `192.168.4.1`.
 - Click **Start** on the Mesquite homepage.
@@ -67,7 +67,7 @@
 
 ---
 
-## 6️⃣ Starting Motion Capture 🏃‍♂️
+## 6️⃣ Starting Motion Capture 
 
 - Verify that all 16 sensors are connected and transmitting data.
 - Stand in a **T-pose** as shown in the guide.
@@ -78,7 +78,7 @@
 
 ---
 
-## 7️⃣ Recording BVH 🎬
+## 7️⃣ Recording BVH 
 
 - To record BVH data, stay in a **T-pose** and click **Record BVH**.
 - Perform the desired movements.
@@ -88,7 +88,7 @@
 
 ---
 
-## 🎯 **Important Tips for Best Performance:**
+##  **Important Tips for Best Performance:**
 
 - ✅ Ensure all pods are fully charged before use.  
 - ✅ Wear straps securely to avoid sensor shifts.  
@@ -97,7 +97,4 @@
 
 ---
 
-💡 **Need Help?** Visit our website: [mesquite.cc](http://mesquite.cc) for support and troubleshooting.
-
-📡 **Stay Connected. Stay Accurate.**  🌐
 
