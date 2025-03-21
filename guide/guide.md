@@ -25,7 +25,7 @@
 
 ## 3️⃣ Box Calibration 
 
-- Remove all pods from the charging hub and line them up as shown.
+- Remove all pods from the charging hub and put them in calibration plate as per shown in the image.
 - Ensure all charging ports face the same direction.
 - Turn on each pod and check connections and battery levels in **Branches**.
 - On [mesquite.cc](http://mesquite.cc), click **Box Calibration**, then **Start**.
