@@ -36,7 +36,7 @@ date:
 
 The proposed system consists of 15 wearable pods which are attached to the different bones of the human  body. The pods are tied on straps with the help of powerful magnets for ease. Each pod is  marked with the name of the human bone it monitors. The system is completed with an Android mobile phone  that uses visual odometry to determine the position of the human body in 3D space. Every  pod has a 9-axis IMU sensor (T ICM by LilyGO) and an  ESP32 dual-core microcontroller.
 
-![IMU Placement]( https://raw.githubusercontent.com/Mesquite-Mocap/about.mesquite.cc/main/assets/images/15-imu-shown.png)
+![IMU Placement]( https://raw.githubusercontent.com/Mesquite-Mocap/about.mesquite.cc/main/assets/images/imu15.png)
 
 The system architecture of this ESP32-based motion tracking system is designed for real-time wireless transmission of IMU data using ESP-NOW communication. The ESP32 microcontroller operates on a dual-task FreeRTOS architecture, where one core is dedicated to reading quaternion data from the IMU via the I2C interface (SCL and SDA pins), while the other core transmits this data wirelessly at a rate of 32 frames per second (FPS). The quaternion data, representing the 3D orientation of each pod, is processed to prevent Euler’s gimbal lock issue.
 
