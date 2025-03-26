@@ -15,6 +15,9 @@ authors:
   - name: Darsh Patel
     orcid: 0009-0006-4559-4027
     equal-contrib: true
+  - name: Assegid Kidane
+    orcid: 0009-0002-0849-3703
+    equal-contrib: true  
   - name: Tejaswi Gowda Ph.D.
     orcid: 0000-0002-0896-6526
     corresponding: true
